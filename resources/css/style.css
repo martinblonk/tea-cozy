@@ -7,7 +7,7 @@ body{
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
+/**  opacity: 0.9; **/
   text-align: center;
 }
 
@@ -46,6 +46,7 @@ h5 {
 p {
   display: block;
 }
+
 /** Header styles **/
 header {
   width: 100%;
@@ -55,6 +56,7 @@ header {
   border-bottom: 1px solid seashell;
   align-items: center;
   background-color: black;
+  top: 0px;
 }
 
 header img {
@@ -148,6 +150,30 @@ nav span {
 /** Contact section styles **/
 #contact {
   height: 200px;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+/** Mail icon before mail address **/
+#c_email::before {
+  content: "\2709";
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 18px;
+  position: inherit;
+  padding-right: 0.25em;
+}
+
+/** Phone icon before telephone number **/
+#c_phone::before {
+    content: "\2706";
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 18px;
+    position: inherit;
+    padding-right: 0.25em;
 }
 
 /** Footer styles **/
